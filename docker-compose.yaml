@@ -1,14 +1,14 @@
 services:
   backend:
     build: ./backend
-    container_name: flaskp_backend
+    container_name: flask_backend_v1
     ports:
       - "5000:5000"
     restart: unless-stopped
 
   frontend:
     build: ./frontend
-    container_name: flaskp_frontend
+    container_name: flask_frontend_v1
     ports:
       - "3000:3000"
     environment:
